@@ -2,13 +2,37 @@
   width:100%;
   object-fit: cover;
 }
+body{
+  background-color: #fdf6f9;
+}
 .App{
   display: flex;
   justify-content: center;
   /* align-items: center; */
+
+}
+.card {  
+  box-shadow: 0 4px 10px rgba(255, 111, 145, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+.App button{
+  background-color: #ff6f91;
+border-radius: 25px;
+  border-color: #fdf6f9;
+}
+.App button:hover{
+  background-color: #7c83fd;
+  
 }
 .page h1{
   text-align: center;
+  color: #111827;
  
 
 }
@@ -17,4 +41,31 @@
   justify-content: center !important;
   /* align-items: center;  */
   width: 250px;
+  display: block;
+  margin: 0 auto;
+  
+}
+
+/* NAV */
+.cute-navbar {
+  background: #fdf6f9;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border-bottom: 2px solid #ff6f91;
+}
+
+.logo {
+  color: #ff6f91 !important;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.nav-links a {
+  color: #2f2f2f !important;
+  margin-left: 15px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff6f91 !important;
+  transform: scale(1.05);
 }

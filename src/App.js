@@ -6,10 +6,16 @@ import Name from './componets/Name';
 import Description from './componets/Description';
 import Image from './componets/Image';
 import Price from './componets/Price';
+import Button from 'react-bootstrap/Button';
+import Navbar from 'react-bootstrap/Navbar';
+import MyNavbar from './componets/MyNavbar';
+import Nav from 'react-bootstrap/Nav';
+import Container from 'react-bootstrap/Container';
 function App() {
   var name ="fatma";
   return (
     <>
+      <MyNavbar/>
       <div className='App'>
       <Card style={{ width: '18rem' }}>
         <Image/>
@@ -19,6 +25,8 @@ function App() {
          <Description/>
          <Price/>
         </Card.Text>
+        <Button variant="primary">Add to cart</Button>
+
       </Card.Body>
     </Card>
     </div>
