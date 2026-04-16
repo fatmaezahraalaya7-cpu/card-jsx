@@ -2,20 +2,20 @@ import React from 'react'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
-import Name from './componets/Name';
-import Description from './componets/Description';
-import Image from './componets/Image';
-import Price from './componets/Price';
+import Name from './components/Name';
+import Description from './components/Description';
+import Image from './components/Image';
+import Price from './components/Price';
 import Button from 'react-bootstrap/Button';
-import Navbar from 'react-bootstrap/Navbar';
-import MyNavbar from './componets/MyNavbar';
-import Nav from 'react-bootstrap/Nav';
-import Container from 'react-bootstrap/Container';
+import MyNavbar from './components/MyNavbar';
+
 function App() {
   var name ="fatma";
   return (
     <>
+    {/* <img src="/download.jpg"/> */}
       <MyNavbar/>
+      <img src="flower.jpg" className='flower'/>
       <div className='App'>
       <Card style={{ width: '18rem' }}>
         <Image/>
@@ -29,6 +29,9 @@ function App() {
 
       </Card.Body>
     </Card>
+        <img src="airpods-.png" className='im'/>
+        <img src="box-airpods.png" className='imbox'/>
+
     </div>
     <div className='page'>
     {name?<h1>Hallo {name}</h1>:<h1>Hello there !</h1>}
